@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand navbar-dark fixed-top">
+	<!-- Brand/logo -->
+	<a class="navbar-brand">{{titulo}}</a>
+	<!-- Links -->
+	<ul class="navbar-nav">
+		<li class="nav-item">
+			<a class="nav-link" href="#inicio">Inicio</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#form">Formulario</a>
+		</li>
+	</ul>
+
+	<!-- Iniciar sesión -->
+	<div class="collapse navbar-collapse justify-content-end" id="nav-content">
+		<a class="btn btn-user dropdown-toggle" data-toggle="dropdown" type="button" style="width:80px;"><i class="fas fa-user"></i></a>
+
+		<ul id="login-dp" class="dropdown-menu" style="width:350px;">
+			<li>
+				<div class="row">
+
+					<div class="col-12">
+						<h6>Iniciar sesión via</h6>
+						<div class="social-buttons">
+							<a href="#" class="btn btn-fb"><i class="fab fa-facebook"></i> Facebook</a>
+							<a href="#" class="btn btn-tw"><i class="fab fa-twitter"></i> Twitter</a>
+						</div>
+						<h6>ó</h6>
+						<form class="form needs-validation" role="form" method="post" action="adminImg.jsp" id="login-nav" novalidate>
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputEmail2">Correo electronico</label>
+								<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Correo electronico" required>
+								<div class="valid-feedback"></div>
+								<div class="invalid-feedback"></div>
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+								<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Contraseña" required>
+								<div class="valid-feedback"></div>
+								<div class="invalid-feedback"></div>
+								<div class="help-block text-right"><a href="">¿Olvidaste tu contraseña?</a></div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+									<label class="form-check-label" for="invalidCheck">
+										Acepta los términos y condiciones.
+									</label>
+									<div class="invalid-feedback">
+										Debe aceptar antes de enviar.
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-join btn-block">Iniciar sesión</button>
+							</div>
+						</form>
+						<div class="bottom text-center">
+							¿Nuevo Aquí? <a href="#"><b>Únete a nosotros</b></a>
+						</div>
+					</div>
+
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+</nav>

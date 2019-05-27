@@ -1,2 +1,0 @@
-# cssAngular
-Created with CodeSandbox

@@ -7,9 +7,15 @@ import { RouteModule } from "./route/route.module";
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { GaleriaComponent } from "./components/galeria/galeria.component";
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    GaleriaComponent
+  ],
   imports: [BrowserModule, FormsModule, RouteModule],
   providers: [],
   bootstrap: [AppComponent]

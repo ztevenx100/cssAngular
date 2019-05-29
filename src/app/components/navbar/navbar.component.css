@@ -22,6 +22,10 @@ html {
   height: 60px;
 }
 
+.navbar .nav-item a {
+  transition: 0.5s;
+}
+
 #nav-content {
   padding: 10px 0;
   height: 50px;
@@ -142,6 +146,7 @@ html {
 #login-dp .btn-join {
   color: #fff;
   background-color: #000;
+  transition: 0.5s;
 }
 #login-dp .btn-join:hover {
   color: #000;

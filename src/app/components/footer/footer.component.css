@@ -3,6 +3,10 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
+/*links:
+-https://ponceelrelajado.com/footer-siempre-abajo/
+-https://www.google.com/search?rlz=1C1KMZB_enCO832CO832&ei=SuDuXOKdBNHG5gKDgbyYBQ&q=css+footer+siempre+abajo&oq=css%2B&gs_l=psy-ab.1.1.0i10j0i67l6j0i10l3.1048709.1052354..1079066...1.0..0.241.779.0j5j1......0....1..gws-wiz.....0..0i71j0i131j0.VLu7ZrrDohk
+*/
 /* 
     Created on : 16/09/2018, 09:59:44 PM
     Author     : Steven
@@ -23,13 +27,13 @@ body {
 /*-------------------------------------------------------------------------------
         Footer
 -------------------------------------------------------------------------------*/
-.footer {
+footer {
   background-color: #000;
   margin: 0;
   margin-top: 30px;
   padding: 0;
   text-align: center;
-  align-flex: flex-end;
+  bottom: 0;
   width: 100%;
   border-top: 2px solid #fff;
 }

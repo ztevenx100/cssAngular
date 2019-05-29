@@ -6,7 +6,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./footer.component.css"]
 })
 export class FooterComponent implements OnInit {
-  fecha = "21-10-2018";
+  fecha = "29-05-2019";
+  autor = "Zteven";
+  nombre = "Pedro Castiblanco";
+  anoCreacion = 2019;
 
   constructor() {}
 

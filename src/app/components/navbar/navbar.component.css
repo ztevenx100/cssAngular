@@ -30,6 +30,7 @@ html {
 #nav-content .btn-user {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.3);
+  transition: 1s;
 }
 
 #nav-content .btn-user:hover {
@@ -38,9 +39,10 @@ html {
 
 #nav-content .btn-user .fa-user {
   color: rgba(255, 255, 255, 0.8);
+  transition: 1s;
 }
 
-#nav-content .btn-user .fa-user:hover {
+#nav-content .btn-user:hover .fa-user {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -48,7 +50,7 @@ html {
   min-width: 200px;
   padding: 14px 14px 0;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   left: auto;
 }
 
@@ -68,12 +70,13 @@ html {
 }
 
 #login-dp .bottom {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #fff;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
   clear: both;
   padding: 2px;
-  margin: 5px 0;
+  margin: 5px 0 20px 0;
 }
 
 #login-dp .bottom a {
@@ -95,22 +98,47 @@ html {
   margin-bottom: 10px;
 }
 
+/*Icons*/
+
 #login-dp .btn-fb {
   color: #fff;
-  background-color: #3b5998;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
 }
 #login-dp .btn-fb:hover {
   color: #fff;
-  background-color: #496ebc;
+  background-color: rgb(48, 128, 225);
 }
 #login-dp .btn-tw {
   color: #fff;
-  background-color: #55acee;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
 }
 #login-dp .btn-tw:hover {
   color: #fff;
-  background-color: #59b5fa;
+  background-color: rgb(48, 201, 225);
 }
+#login-dp .btn-yt {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+#login-dp .btn-yt:hover {
+  color: #fff;
+  background-color: rgb(213, 0, 0);
+}
+#login-dp .btn-wa {
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+#login-dp .btn-wa:hover {
+  color: #fff;
+  background-color: rgb(0, 204, 31);
+}
+
+/**/
+
 #login-dp .btn-join {
   color: #fff;
   background-color: #000;
@@ -135,11 +163,13 @@ html {
 
 @media (max-width: 768px) {
   #login-dp {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
   }
   #login-dp .bottom {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
     border-top: 0 none;
   }
 }

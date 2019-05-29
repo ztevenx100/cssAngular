@@ -52,6 +52,7 @@ footer {
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   text-decoration: none;
+  transition: 1s;
 }
 
 .footer-info a:hover {
@@ -75,20 +76,14 @@ footer {
 }
 
 .footer .base-contact-social {
-  padding: 20px 0;
-  height: 80px;
+  padding: 15px 0;
+  height: 100%;
   text-align: center;
 }
 
-.footer .contact-social {
-  padding-left: 0;
+.footer .base-contact-social .contact-social {
+  padding: 0;
   margin: 0;
-}
-
-.footer .contact-social li {
-  margin-right: 10px;
-  padding-left: 10px;
-  display: inline-block;
 }
 
 .footer .contact-social a i {
@@ -96,9 +91,30 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   display: inline-block;
   width: 100%;
+  transition: 0.5s;
 }
 
 .footer .contact-social a i:hover,
 .footer .contact-social a i:focus {
   color: #fff;
+}
+
+.footer .contact-social a .fa-facebook:hover,
+.footer .contact-social a .fa-facebook:focus {
+  color: rgb(48, 128, 225);
+}
+
+.footer .contact-social a .fa-twitter:hover,
+.footer .contact-social a .fa-twitter:focus {
+  color: rgb(48, 201, 225);
+}
+
+.footer .contact-social a .fa-youtube:hover,
+.footer .contact-social a .fa-youtube:focus {
+  color: rgb(213, 0, 0);
+}
+
+.footer .contact-social a .fa-whatsapp:hover,
+.footer .contact-social a .fa-whatsapp:focus {
+  color: rgb(0, 204, 31);
 }

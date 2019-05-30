@@ -1,3 +1,4 @@
+/*original*/
 body {
   display: flex;
   justify-content: center;
@@ -6,8 +7,8 @@ body {
 }
 
 ul {
-  height: 60vh;
-  width: 20vh;
+  height: 100vh;
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(4, 1fr 2fr 1fr);
   overflow: hidden;
@@ -18,7 +19,7 @@ li {
   height: 100%;
   grid-column: 1 / span 1;
 
-  --offsetX: 50%;
+  --offsetY: 50%;
 }
 
 a {
@@ -78,14 +79,14 @@ anim
 }
 
 li:nth-of-type(odd) a {
-  transform: translate(var(--offsetX), calc(var(--offsetX) * 0.166 * -2));
+  transform: translate(var(--offsetY), calc(var(--offsetY) * 0.166 * -2));
   animation: o 2s;
 }
 
 li:nth-of-type(even) a {
   transform: translate(
-    calc(var(--offsetX) * -1),
-    calc(var(--offsetX) * 0.166 * 2)
+    calc(var(--offsetY) * -1),
+    calc(var(--offsetY) * 0.166 * 2)
   );
   animation: o 2s;
 }
@@ -93,13 +94,13 @@ li:nth-of-type(even) a {
 /*first and last hv diff slope; first=last=2/5fr regular=2/6fr; */
 
 li:first-of-type a {
-  transform: translate(var(--offsetX), calc(var(--offsetX) * 0.2 * -2));
+  transform: translate(var(--offsetY), calc(var(--offsetY) * 0.2 * -2));
 }
 
 li:last-of-type a {
   transform: translate(
-    calc(var(--offsetX) * -1),
-    calc(var(--offsetX) * 0.2 * 2)
+    calc(var(--offsetY) * -1),
+    calc(var(--offsetY) * 0.2 * 2)
   );
 }
 
@@ -141,6 +142,170 @@ img {
   filter: blur(10px);
   transition: filter 0.7s;
 }
+
 li:hover img {
+  filter: blur(0);
+}
+/*original------------------------------------------------------*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.base-img {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 2fr 1fr);
+  overflow: hidden;
+}
+
+.item-img {
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / span 1;
+
+  --offsetY: 50%;
+}
+
+a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-img:first-of-type {
+  grid-column: 1 / span 4;
+  /*total=5fr*/
+  /*clip-path: polygon(
+    100% calc(20% * -1),
+    0 calc(20%),
+    0 100%,
+    100% calc(20% * 3)
+  );*/
+  /*clip-path: polygon(
+    0% calc(20% * 3),
+    100% calc(20%),
+    100% 0%,
+    0% calc(20% * -1)
+  );*/
+  clip-path: polygon(100% 0%, 30% 0%, 0% 100%, 70% 100%);
+}
+
+.item-img:nth-of-type(2) {
+  grid-column: 3 / span 5;
+  /*total=6fr*/
+  /*clip-path: polygon(100% 0, 0 calc(16.6% * 2), 0 100%, 100% calc(16.6% * 4));*/
+  clip-path: polygon(100% 0%, 30% 0%, 0% 100%, 70% 100%);
+}
+
+.item-img:nth-of-type(3) {
+  grid-column: 6 / span 5;
+  /*total=6fr*/
+  /*clip-path: polygon(100% 0, 0 calc(16.6% * 2), 0 100%, 100% calc(16.6% * 4));*/
+  clip-path: polygon(100% 0%, 30% 0%, 0% 100%, 70% 100%);
+}
+
+.item-img:last-of-type {
+  grid-column: -5 / span 4;
+  /*total=5fr*/
+  /*clip-path: polygon(
+    100% 0,
+    0 calc(20% * 2),
+    0 calc(20% * 6),
+    100% calc(20% * 4)
+  );*/
+  clip-path: polygon(100% 0%, 30% 0%, 0% 100%, 70% 100%);
+}
+
+/*
+anim
+*/
+@keyframes o {
+  from {
+    transform: translate(0);
+  }
+}
+
+.item-img:nth-of-type(odd) a {
+  transform: translate(calc(var(--offsetY) * 0.166 * -2), calc(var(--offsetY)));
+  animation: o 2s;
+}
+
+.item-img:nth-of-type(even) a {
+  transform: translate(
+    calc(var(--offsetY) * 0.166 * 2),
+    calc(var(--offsetY) * -1)
+  );
+  animation: o 2s;
+}
+
+/*first and last hv diff slope; first=last=2/5fr regular=2/6fr; */
+
+.item-img:first-of-type a {
+  transform: translate(calc(var(--offsetY) * 0.2 * -2), calc(var(--offsetY)));
+}
+
+.item-img:last-of-type a {
+  transform: translate(
+    calc(var(--offsetY) * 0.2 * 2),
+    calc(var(--offsetY) * -1)
+  );
+}
+
+img {
+  animation: blr 2s;
+  filter: blur(10px);
+}
+@keyframes blr {
+  from {
+    filter: blur(0);
+  }
+}
+
+/*
+hover & vfx
+*/
+.item-img {
+  transition: opacity 0.3s;
+}
+
+.item-img a {
+  transition: all 0.15s;
+}
+
+.item-img:hover a {
+  transition: transform 0.3s;
+  transform: translate(0);
+}
+
+.base-img:hover .item-img {
+  opacity: 0.1;
+}
+
+.base-img:hover .item-img:hover {
+  opacity: 1;
+  transition: clip-path 0.4s 0.3s;
+  /*clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);*/
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
+  z-index: 0;
+}
+
+img {
+  filter: blur(10px);
+  transition: filter 0.7s;
+}
+
+.item-img:hover img {
   filter: blur(0);
 }

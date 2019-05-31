@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.row-base {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.l-index {
+  background-color: rgb(18, 42, 76);
+}
+
+.r-index {
+  background-color: rgb(255, 255, 255);
+}
+
+.txt-mesut {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(18, 42, 76);
+  width: 100%;
+}
+
+.txt-megasoft {
+  text-align: center;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+p{
+  margin: 0;
+}
+
+.row-footer{
+  border-top: 5px solid #000;
+}

@@ -115,7 +115,7 @@
 
 .ca-icon {
   font-family: "WebSymbolsRegular", cursive;
-  color: #71016f;
+  color: #000;
   font-size:30px;
   text-shadow: 1px 0px 1px rgba(0,0,0,0.7);
   line-height: 100px;
@@ -146,19 +146,21 @@
   font-size: 14px;
   opacity: 0.8;
   color: #666;
-  line-height: 20px;
+  line-height: 30px;
   text-align:center;
   position: absolute;
   bottom: 0;
+  margin-bottom: 0;
   width: 100%; 
   transition: all 300ms linear;
 }
 
 .base-menu .item-menu:hover {
   background-color: #000;
+  border-top: 10px solid #71016f;
 }
 .base-menu .item-menu:hover .ca-icon {
-  color: #f900b0;
+  color: #71016f;
   font-size: 120px;
   opacity: 0.2;
   left: -20px;

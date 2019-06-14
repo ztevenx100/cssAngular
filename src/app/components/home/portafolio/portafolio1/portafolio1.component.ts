@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import "portafolio1";
 
 @Component({
   selector: "app-portafolio1",

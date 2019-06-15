@@ -10,7 +10,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { GaleriaComponent } from "./components/home/galeria/galeria.component";
 import { MenuComponent } from "./components/home/menu/menu.component";
 import { MesutComponent } from "./components/megasoft/miMesut/miMesut.component";
-import { Portafolio1Component } from "./components/home/portafollio/portafolio1/portafolio1.component";
+import { Portafolio1Component } from "./components/home/portafolio/portafolio1/portafolio1.component";
 import { HomeComponent } from "./components/home/home.component";
 
 @NgModule({

@@ -4,6 +4,7 @@ $body: 'Inconsolata', monospace;
 $big: 'Merriweather', serif;
 
 $white: #ffffff;
+$black: #000;
 $primary: #F2DAD7;
 $secondary: #D1A39E;
 $light: #CECDCA;
@@ -132,11 +133,18 @@ button {
 }
 
 .overlay__inner {
-  background: $white;
-  width: 700px;
-  padding: 20px;
+  background: $black;
+  width: auto;
+  height: 700px;
+  padding: 30px;
   position: relative;
   opacity: 1;
+  img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .close {

@@ -13,4 +13,6 @@ function close() {
 }
 
 buttons.forEach(button => button.addEventListener("click", open));
-overlay.addEventListener("click", close);
+if (overlay) {
+  overlay.addEventListener("click", close);
+}

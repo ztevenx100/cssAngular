@@ -21,8 +21,7 @@
             "styles": ["src/styles.css"],
             "scripts": [
               "src/assets/vendor/jquery/jquery.js",
-              "src/assets/vendor/jquery/jquery.min.js",
-              "src/assets/js/portafolio1.js"
+              "src/assets/vendor/jquery/jquery.min.js"
             ]
           },
           "configurations": {

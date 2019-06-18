@@ -12,6 +12,8 @@ import { MenuComponent } from "./components/home/menu/menu.component";
 import { MesutComponent } from "./components/megasoft/miMesut/miMesut.component";
 import { Portafolio1Component } from "./components/home/portafolio/portafolio1/portafolio1.component";
 import { HomeComponent } from "./components/home/home.component";
+import { MusicaComponent } from "./components/home/musica/musica.component";
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HomeComponent } from "./components/home/home.component";
     GaleriaComponent,
     MenuComponent,
     Portafolio1Component,
-    MesutComponent
+    MesutComponent,
+    MusicaComponent
   ],
   imports: [BrowserModule, FormsModule, RouteModule],
   providers: [],
